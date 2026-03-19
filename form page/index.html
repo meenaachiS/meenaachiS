@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Page</title><!-- form section start-->
+<body>
+<section class="form-section">
+<link rel="stylesheet" href="style.css">
+
+<h2>Please fill in your details</h2>
+<form id="formSection" action="http://127.0.0.1:5000/submit" method="POST">
+
+<div class="form-grid">
+
+<!-- First Name -->
+
+<div class="form-group">
+<label>First Name</label>
+<input type="text" id="firstname" name="firstname" placeholder="Enter your First name">
+<span class="error" id="fnameError"></span>
+<div class="popup" id="fnamePopup">Please enter your first name</div>
+</div>
+
+<!-- Last Name -->
+
+<div class="form-group">
+<label>Last Name</label>
+<input type="text" id="lastname" name="lastname" placeholder="Enter your Last name">
+<span class="error" id="lnameError"></span>
+<div class="popup" id="lnamePopup">Please enter your last name</div>
+</div>
+
+<!-- Mobile -->
+
+<div class="form-group">
+<label>Mobile Number</label>
+
+<div class="phone-box">
+
+<select id="countryCode">
+<option value="+91">+91</option>
+<option value="+971">+971</option>
+<option value="+1">+1</option>
+<option value="+44">+44</option>
+</select>
+
+<input type="text" id="mobile" name="mobile" placeholder="Mobile Number">
+
+</div>
+
+<span class="error" id="mobileError"></span>
+<div class="popup" id="mobilePopup">Please enter your mobile number</div>
+
+</div>
+
+<!-- Email -->
+
+<div class="form-group">
+<label>Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your Email ID">
+<span class="error" id="emailError"></span>
+<div class="popup" id="emailPopup">Please enter your email</div>
+</div>
+
+<!-- Nationality -->
+
+<div class="form-group">
+<label>Nationality</label>
+<select id="nationality" name="nationality">
+<option value="">Select Nationality</option>
+<option>Indian</option>
+<option>American</option>
+<option>British</option>
+<option>Canadian</option>
+<option>Australian</option>
+<option>UAE</option>
+</select>
+
+<span class="error" id="nationError"></span>
+<div class="popup" id="nationPopup">Please select nationality</div>
+
+</div>
+
+</div>
+<div class="form-group gender-group">
+
+<label>Gender</label>
+
+<div class="gender-options">
+
+<label class="gender-item">
+<input type="radio" name="gender" value="Male"> Male
+</label>
+
+<label class="gender-item">
+<input type="radio" name="gender" value="Female"> Female
+</label>
+
+<label class="gender-item">
+<input type="radio" name="gender" value="Other"> Other
+</label>
+
+</div>
+
+<span class="error" id="genderError"></span>
+
+</div>
+
+<button type="submit" class="submit-btn">Submit</button>
+
+</form>
+
+</section>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!--form section end-->
